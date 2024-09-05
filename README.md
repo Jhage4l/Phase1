@@ -1,4 +1,4 @@
-# Real-Time Chat System - MEAN Stack
+# Real-Time Chat System
 
 ## Overview
 This project is a real-time text and video chat system developed using the **MEAN stack** (MongoDB, Express, Angular, Node.js) along with **Socket.io** for real-time messaging and **Peer.js** for video chat functionality. The system includes three levels of user roles: **Super Admin**, **Group Admin**, and **Chat User**, each with varying levels of permissions to manage groups and communicate with other users in real time.
@@ -47,4 +47,3 @@ git push origin main
 git tag -a v1.0 -m "Version 1.0 - Basic chat feature complete"
 git push origin v1.0
 
-# Share repository with marker as a collaborator
