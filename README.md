@@ -24,3 +24,27 @@ Ensure that you have the following installed on your system:
    ```bash
    git clone https://github.com/your-repo-name.git
    cd your-repo-name/backend
+
+
+   # Initialize repository and first commit
+git init
+echo "node_modules/" >> .gitignore
+git add .
+git commit -m "Initial commit - Setup project structure"
+
+# Create a branch for working on the chat feature
+git checkout -b feature/chat-system
+# Make changes, then add and commit
+git add .
+git commit -m "Implemented real-time chat using Socket.io"
+# Merge back into the main branch once complete
+git checkout main
+git merge feature/chat-system
+# Push changes to GitHub
+git push origin main
+
+# Tag the version
+git tag -a v1.0 -m "Version 1.0 - Basic chat feature complete"
+git push origin v1.0
+
+# Share repository with marker as a collaborator
